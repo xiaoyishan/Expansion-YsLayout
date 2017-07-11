@@ -10,7 +10,7 @@
 
 
 /*
- *  与 UIViewAutoresizing 相反 auto位置代表固定位置 而非fix位置 为保持与xib一致
+ *  与 UIViewAutoresizing 相反 auto位置代表固定位置 而非Flexible位置 为保持与xib一致
 */
 typedef NS_OPTIONS(NSUInteger, YsLayout) {
     AutoNone            = 0,
@@ -28,7 +28,7 @@ typedef NS_OPTIONS(NSUInteger, YsLayout) {
  *  1>> 0~2   ←  →    ←→
  *  1>> 3~5   ↑  ↓    ↑↓
  *
- *  重新set layout 使 位运算 使用更加简单直观（待实现...）
+ *  重新set layout 使 位运算 使用更加简单直观（移位太麻烦。。。 待实现）
  */
 @property(nonatomic) YsLayout YsLayoutMask;
 
